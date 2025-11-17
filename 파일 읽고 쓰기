@@ -1,0 +1,22 @@
+#filecopy
+#파일 복사 프로그램을 만드시오.
+#원본은 있는 파일이어야 한다.
+#두개의 파일을 열기. (원본(있는 파일):r, 사본(없는 파일):w)
+#원본에서 readline한 것을 사본에 write한다.
+#읽기가 끝나면 복사 완료를 의미
+#파일 닫기
+
+
+source=input('원본파일명:')
+target=input('사본파일명:')
+sf = open(source, 'r')
+tf = open(source, 'w')
+
+while True:
+    line = sf.readline()
+    if not line:
+        break
+    tf.write(line)
+sf.close()
+tf.close()
+
