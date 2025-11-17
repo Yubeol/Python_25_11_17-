@@ -1,0 +1,3 @@
+hong@test.com
+kim@naver.com
+lee@gmail.com
